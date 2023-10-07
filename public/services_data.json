@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Virtual Reality Learning Experiences",
+    "image": "https://i.ibb.co/mz1Y9Kn/service-1.jpg",
+    "price": "$50",
+    "short_description": "Explore immersive virtual reality educational adventures.",
+    "full_description": "Dive into the world of virtual reality education! Our event offers a unique opportunity for students and educators to experience immersive learning environments. From historical simulations to deep-sea explorations, join us for an educational adventure like no other. Price includes access to VR equipment and expert guidance."
+  },
+  {
+    "id": 2,
+    "name": "STEAM Hackathons for Kids",
+    "image": "https://i.ibb.co/2nNHVcc/service-2.jpg",
+    "price": "$25",
+    "short_description": "Foster creativity and problem-solving skills in young minds.",
+    "full_description": "Ignite your child's passion for science, technology, engineering, arts, and mathematics (STEAM) with our kid-friendly hackathons. Children will work in teams to solve fun and challenging STEAM-related problems. Our mentors will guide them through the process, promoting critical thinking and creativity. A great way to inspire young innovators!"
+  },
+  {
+    "id": 3,
+    "name": "Global Language Learning Festivals",
+    "image": "https://i.ibb.co/Lt9FpLG/service-3.jpg",
+    "price": "Free",
+    "short_description": "Celebrate linguistic diversity and learn new languages.",
+    "full_description": "Join us in celebrating the beauty of languages from around the world! Our global language learning festivals offer free language workshops, cultural exhibitions, and immersive language experiences. Whether you're a language enthusiast or a beginner, there's something for everyone. Dive into a world of words and expand your horizons."
+  },
+  {
+    "id": 4,
+    "name": "Green Education and Sustainability Summits",
+    "image": "https://i.ibb.co/hH2zcTF/service-4.jpg",
+    "price": "$75",
+    "short_description": "Explore sustainability practices and eco-friendly solutions.",
+    "full_description": "Take part in shaping a sustainable future at our annual sustainability summit. Connect with experts in environmental conservation, renewable energy, and sustainable agriculture. Learn about innovative eco-friendly solutions and discuss pressing environmental issues. Join us in taking meaningful steps toward a greener, more sustainable world."
+  },
+  {
+    "id": 5,
+    "name": "Online Tutoring and Homework Help Marathons",
+    "image": "https://i.ibb.co/jLmFvQY/service-5.jpg",
+    "price": "$20",
+    "short_description": "Get expert assistance with your studies from the comfort of your home.",
+    "full_description": "Struggling with homework? Need some extra help with your studies? Join our online tutoring and homework help marathons! Our qualified tutors will be available around the clock to assist you with your academic challenges. Affordable and convenient, it's the support you need, when you need it."
+  },
+  {
+    "id": 6,
+    "name": "Teacher Training Conference",
+    "image": "https://i.ibb.co/FY0Rfzz/service-6.jpg",
+    "price": "$150",
+    "short_description": "Enhance your teaching skills and stay updated with the latest trends.",
+    "full_description": "Calling all educators! Elevate your teaching career with our comprehensive teacher training conference. Engage with renowned speakers, attend interactive workshops, and explore the latest teaching methodologies and classroom technologies. Join a community of dedicated educators committed to enhancing the future of education."
+  }
+]
