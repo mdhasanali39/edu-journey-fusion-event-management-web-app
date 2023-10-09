@@ -18,9 +18,9 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: `{}`
 
-<i>Write your explanation here</i>
+<i>Here, first defined a variable name 'greeting' but not initialized, than assign an object to this variable and that is empty (variable declared with let is re-assignable). that is why, we will get empty object</i>
 
 </p>
 </details>
@@ -45,8 +45,9 @@ sum(1, "2");
 
 #### Answer: ?
 
-<i>Write your explanation here</i>
-
+<i>in javascript + work for addition and with work for concatenate,
+ here, a and b are concatenated, cause, type of a is number but type of b is string,
+in javascript left or right one are string and if operator are + than a and b will be concatenated.</i>
 </p>
 </details>
 
@@ -69,9 +70,10 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: A: `['🍕', '🍫', '🥑', '🍔']`
 
-<i>Write your explanation here</i>
+<i>Here, info object can not get the reference of food[0], this info object are only get the value of food array [0] index,
+that is why when we console log food than we will get not changed food array</i>
 
 </p>
 </details>
