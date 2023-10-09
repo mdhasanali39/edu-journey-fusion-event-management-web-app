@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Context/ContextProvider";
 import toast from "react-hot-toast";
 
@@ -17,7 +17,14 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="">
+    <nav className="flex justify-between py-4 px-6">
+      {/* logo  */}
+      <div className="font-bold text-xl text-white">
+          <Link to={"/"}>
+            <h2>EduJourneyFusion</h2>
+          </Link>
+        </div>
+
       <ul className="flex gap-6 items-center text-white">
         {/* home  */}
         <li className="font-semibold text-[17px]">

@@ -4,6 +4,11 @@ import clientImg_1 from "../../assets/client_1.jpg";
 import clientImg_2 from "../../assets/client_2.jpg";
 import clientImg_3 from "../../assets/client_3.jpg";
 import { FaFacebook, FaLinkedin, FaQuoteLeft, FaTwitter } from "react-icons/fa6";
+import "aos/dist/aos.css";
+import Aos from "aos";
+
+ Aos.init({duration:1000});
+
 
 const OurFeedback = () => {
   return (
@@ -11,7 +16,8 @@ const OurFeedback = () => {
       <h2 className="text-4xl text-center font-bold mb-10">Our Feedback</h2>
       <div className="grid gap-6 content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {/* feedback one  */}
-        <div className="border relative pt-10">
+        <div data-aos="fade-up" data-aos-duration="1000"
+          className="border relative pt-10">
           <span className="absolute top-[5%] left-[3%] text-2xl text-clr-red"
           ><FaQuoteLeft/></span>
           <p className="px-7 py-5 mb-4">
@@ -44,7 +50,8 @@ const OurFeedback = () => {
           </div>
         </div>
         {/* feedback two  */}
-        <div className="border relative pt-10">
+        <div data-aos="fade-up" data-aos-duration="3000"
+         className="border relative pt-10">
           <span className="absolute top-[5%] left-[3%] text-2xl text-clr-red"
           ><FaQuoteLeft/></span>
           <p className="px-7 py-5 mb-4">
@@ -76,8 +83,9 @@ const OurFeedback = () => {
             <img className="h-[170px] w-full" src={wavBg_2} />
           </div>
         </div>
-        {/* feedback one  */}
-        <div className="border relative pt-10">
+        {/* feedback three  */}
+        <div data-aos="fade-up" data-aos-duration="4000"
+         className="border relative pt-10">
           <span className="absolute top-[5%] left-[3%] text-2xl text-clr-red"
           ><FaQuoteLeft/></span>
           <p className="px-7 py-5 mb-4">

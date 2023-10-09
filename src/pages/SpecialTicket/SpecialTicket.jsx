@@ -2,12 +2,7 @@ import { FaCheck } from "react-icons/fa6";
 
 const SpecialTicket = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-[70vh] px-6 py-12">
-      <div>
-        <h2>Speacial Ticket</h2>
-        <p>Let's Get your Speacial Ticket</p>
-        <p>Speacial people are get Speacial gift</p>
-      </div>
+    <div className="flex flex-col justify-center items-center min-h-[70vh] px-12 py-12">
       <div className="relative flex w-3/4 flex-col rounded-xl bg-custom-blue bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
         <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
           <p className="block  text-sm font-normal uppercase leading-normal text-white antialiased">
