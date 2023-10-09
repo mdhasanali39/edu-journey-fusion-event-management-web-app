@@ -96,9 +96,12 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: B: `Hi there, undefined`
 
-<i>Write your explanation here</i>
+<i>because, sayHi function have one parameter called name 
+  we should pass argument when call sayHi function
+  but here, we do not pass any argument to sayHi function when calling 
+  that why, Hi there, undefined</i>
 
 </p>
 </details>
@@ -124,9 +127,12 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: C: 3
 
-<i>Write your explanation here</i>
+<i>Because, in this forEach loop we are added an codition that is 
+if num is true than count +=1
+but 0 is falsy value that is why our condition will ignore 0 
+than count one by one of rest 3  array items </i>
 
 </p>
 </details>
