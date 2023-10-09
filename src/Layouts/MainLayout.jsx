@@ -1,9 +1,8 @@
 import { Outlet, useLocation } from "react-router-dom";
-import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
-import Navbar from "../components/Header/Navbar/Navbar";
-import Banner from "../components/Header/Banner/Banner";
+import Navbar from "../components/Navbar/Navbar";
+import Banner from "../components/Banner/Banner";
 
 const MainLayout = () => {
 
@@ -11,7 +10,6 @@ const MainLayout = () => {
 
   return (
     <div className="font-Roboto relative">
-      {/* <Header></Header> */}
       <div className={`${ 
         location.pathname === '/speakers' ? 'bg-overlay-speakers bg-top' 
       : location.pathname === '/specialTicket' ? 'bg-overlay-special' 

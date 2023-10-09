@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const SpeakersCard = ({ speaker }) => {
   const { image, name, expert_at } = speaker || {};
 
@@ -15,5 +17,9 @@ const SpeakersCard = ({ speaker }) => {
     </div>
   );
 };
+
+SpeakersCard.propTypes = {
+  speaker: PropTypes.object.isRequired,
+}
 
 export default SpeakersCard;

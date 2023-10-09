@@ -43,7 +43,7 @@ const Register = () => {
     console.log("pass");
     // createUser
     createUser(email, password)
-      .then((result) => {
+      .then(() => {
         profileUpdate(name, imgUrl)
           .then(() => {
             // console.log("profile updated");
