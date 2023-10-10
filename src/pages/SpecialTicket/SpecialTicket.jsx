@@ -1,3 +1,4 @@
+import toast from "react-hot-toast";
 import { FaCheck } from "react-icons/fa6";
 
 const SpecialTicket = () => {
@@ -59,6 +60,7 @@ const SpecialTicket = () => {
         </div>
         <div className="mt-12 p-0 absolute top-[0%] right-[2%]">
           <button
+          onClick={()=> toast.success('Congrats! you got special Ticket')}
             className="flex select-none gap-2 rounded-lg py-3 px-6 text-center align-middle font-bold text-xl uppercase bg-none text-white transition ease-linear duration-200 border border-blue-500 hover:border-clr-red hover:text-clr-red active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "
             type="button"
           >

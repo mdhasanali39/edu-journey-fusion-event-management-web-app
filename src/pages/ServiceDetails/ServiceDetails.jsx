@@ -7,12 +7,12 @@ const ServiceDetails = () => {
     const [selectedService, setSelectedService] = useState({});
 
     const services = useLoaderData();
-    const {name} = useParams();
+    const {id} = useParams();
 
     useEffect(()=>{
-        const selected = services.find(service => service.name === name);
+        const selected = services.find(service => service.id == id);
         setSelectedService(selected);
-    },[name,services])
+    },[id, services])
 
     console.log(selectedService);
 

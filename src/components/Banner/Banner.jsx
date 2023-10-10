@@ -42,7 +42,13 @@ const Banner = () => {
               </p>
             </div>
           ) : (
-            <span>Good Education only</span>
+            <p>
+              <span className="block">Good Education only</span>
+              <span
+              data-aos="fade-up"
+                data-aos-duration="5000"
+               className="text-3xl">Is The Backbone Of A Nation</span>
+            </p>
           )}
         </div>
         <div
@@ -56,13 +62,15 @@ const Banner = () => {
             ""
           ) : (
             <div>
-              <p>Is The Backbone Of A Nation</p>
-              <Link to={'/register'}>
+              {/* <p>Is The Backbone Of A Nation</p> */}
+              <Link
+                to={"/register"}
+              >
                 <button
                   className="flex select-none items-center gap-2 rounded-lg py-3 px-6 mt-6 text-center align-middle font-bold text-sm uppercase bg-custom-red text-white transition ease-linear duration-300 border border-clr-red hover:bg-white hover:border-clr-red hover:text-clr-red active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mx-auto"
                   type="button"
                 >
-                  Register Now <FaArrowRightLong/>
+                  Register Now <FaArrowRightLong />
                 </button>
               </Link>
             </div>

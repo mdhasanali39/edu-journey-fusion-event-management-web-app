@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 Aos.init();
 
 const ServicesCard = ({ service }) => {
-  const { name, image, price, short_description } = service || {}
+  const { id,name, image, price, short_description } = service || {}
 
 
   return (
@@ -25,7 +25,7 @@ const ServicesCard = ({ service }) => {
         <p className="mb-8 block text-base font-semibold leading-relaxed text-clr-red antialiased">
           {price}
         </p>
-        <Link to={`/service/${name}`} className="inline-block">
+        <Link to={`/service/${id}`} className="inline-block">
           <button
             className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle text-sm font-bold uppercase text-clr-red transition ease-linear duration-300 border border-clr-red hover:bg-custom-red hover:text-white active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
             type="button"

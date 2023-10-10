@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import toast from 'react-hot-toast';
 
 const ServiceDetailsCard = ({ selectedService }) => {
   const { name, image, price, full_description } = selectedService;
@@ -45,6 +46,7 @@ const ServiceDetailsCard = ({ selectedService }) => {
         </div>
         {/* get ticket button */}
         <button
+          onClick={() => toast.success('You successfully purchase the ticket')}
           className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-bold text-sm uppercase bg-custom-red text-white transition ease-linear duration-300 border hover:bg-white hover:border-clr-red hover:text-clr-red active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
           type="button"
         >
