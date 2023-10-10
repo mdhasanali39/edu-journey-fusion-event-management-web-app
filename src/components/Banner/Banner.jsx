@@ -18,7 +18,7 @@ const Banner = () => {
       } flex justify-center items-center`}
     >
       <div className="text-white space-y-5 text-center">
-        <div data-aos="zoom-in-up" className="text-7xl font-bold">
+        <div data-aos="zoom-in-up" className="text-4xl lg:text-7xl font-bold">
           {location.pathname === "/speakers" ? (
             <p>
               Meet <span className="text-clr-red">With</span>
@@ -43,36 +43,34 @@ const Banner = () => {
             </div>
           ) : (
             <p>
-              <span className="block">Good Education only</span>
-              <span
-              data-aos="fade-up"
-                data-aos-duration="5000"
-               className="text-3xl">Is The Backbone Of A Nation</span>
+              <span>Good Education only</span>
             </p>
           )}
         </div>
-        <div
-          data-aos="zoom-in-up"
-          data-aos-duration="3000"
-          className="text-3xl font-bold"
-        >
+        <div className="text-3xl font-bold">
           {location.pathname === "/speakers" ? (
-            "Our Expert Speakers"
+            <span data-aos="zoom-in-up" data-aos-duration="3000">
+              Our Expert Speakers
+            </span>
           ) : location.pathname === "/specialTicket" ? (
             ""
           ) : (
             <div>
-              {/* <p>Is The Backbone Of A Nation</p> */}
-              <Link
-                to={"/register"}
+              <p data-aos="fade-up" data-aos-duration="3000">
+                Is The Backbone Of A Nation
+              </p>
+              <div 
+              data-aos="fade-up" data-aos-duration="2000"  data-aos-delay="700"
               >
-                <button
-                  className="flex select-none items-center gap-2 rounded-lg py-3 px-6 mt-6 text-center align-middle font-bold text-sm uppercase bg-custom-red text-white transition ease-linear duration-300 border border-clr-red hover:bg-white hover:border-clr-red hover:text-clr-red active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mx-auto"
-                  type="button"
-                >
-                  Register Now <FaArrowRightLong />
-                </button>
-              </Link>
+                <Link to={"/register"}>
+                  <button
+                    className="flex select-none items-center gap-2 rounded-lg py-3 px-6 mt-6 text-center align-middle font-bold text-sm uppercase bg-custom-red text-white transition ease-linear duration-300 border border-clr-red hover:bg-white hover:border-clr-red hover:text-clr-red active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none mx-auto"
+                    type="button"
+                  >
+                    Register Now <FaArrowRightLong />
+                  </button>
+                </Link>
+              </div>
             </div>
           )}
         </div>

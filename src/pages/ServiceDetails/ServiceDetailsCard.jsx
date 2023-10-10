@@ -5,11 +5,11 @@ const ServiceDetailsCard = ({ selectedService }) => {
   const { name, image, price, full_description } = selectedService;
 
   return (
-    <div className="relative flex w-3/4 mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700">
+    <div className="relative flex w-11/12 md:w-3/4 mx-auto flex-col rounded-xl bg-white bg-clip-border text-gray-700">
       <div className="relative m-0   shrink-0 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
         <img src={image} alt={name} className="h-full w-full object-cover" />
       </div>
-      <div className="p-6">
+      <div className="p-3 md:p-6">
         <h4 className="mb-2 block text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 transition ease-linear duration-200 hover:text-clr-red antialiased">
           {name}
         </h4>
@@ -21,23 +21,23 @@ const ServiceDetailsCard = ({ selectedService }) => {
         </p>
         
         {/* more details  */}
-        <div className="my-5">
+        <div className="my-5 grid gap-5 items-center grid-cols-2 lg:grid-cols-3">
           {/* start  */}
-          <div className="border-b w-1/4 pb-2">
+          <div className="border-b pb-2">
             <h4 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               Start:
             </h4>
             <p>November 10 @ 1:00 am</p>
           </div>
           {/* end  */}
-          <div className="border-b w-1/4 pb-2 my-4">
+          <div className="border-b pb-2 my-4">
             <h4 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               End:
             </h4>
             <p>November 13 @ 1:00 am</p>
           </div>
           {/* location  */}
-          <div className="w-1/4 pb-2">
+          <div className="pb-2">
             <h4 className="mb-2 block text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
               Location:
             </h4>

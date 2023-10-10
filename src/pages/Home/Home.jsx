@@ -8,8 +8,8 @@ const Home = () => {
     
 
     return (
-        <div className="px-12">
-            <Services data-aos="fade-up"></Services>
+        <div className="px-5 md:px-12">
+            <Services></Services>
             <OurFeedback></OurFeedback>
             <OurSponsors></OurSponsors>
         </div>

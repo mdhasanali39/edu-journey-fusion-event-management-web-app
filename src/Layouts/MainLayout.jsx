@@ -9,7 +9,7 @@ const MainLayout = () => {
   const location = useLocation()
 
   return (
-    <div className="font-Roboto relative">
+    <div className="font-Roboto relative max-w-[1370px] mx-auto">
       <div className={`${ 
         location.pathname === '/speakers' ? 'bg-overlay-speakers bg-top' 
       : location.pathname === '/specialTicket' ? 'bg-overlay-special' 
