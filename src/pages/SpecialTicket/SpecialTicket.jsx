@@ -3,8 +3,8 @@ import { FaCheck } from "react-icons/fa6";
 
 const SpecialTicket = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-[70vh] px-12 py-12">
-      <div className="relative flex w-3/4 flex-col rounded-xl bg-custom-blue bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
+    <div className="flex flex-col justify-center items-center min-h-[70vh] px-5 lg:px-12 py-12">
+      <div className="relative flex w-full lg:w-3/4 flex-col rounded-xl bg-custom-blue bg-clip-border p-8 text-white shadow-md shadow-pink-500/40">
         <div className="relative m-0 mb-8 overflow-hidden rounded-none border-b border-white/10 bg-transparent bg-clip-border pb-8 text-center text-gray-700 shadow-none">
           <p className="block  text-sm font-normal uppercase leading-normal text-white antialiased">
             Vip Passes
@@ -58,7 +58,7 @@ const SpecialTicket = () => {
             </li>
           </ul>
         </div>
-        <div className="mt-12 p-0 absolute top-[0%] right-[2%]">
+        <div className="mt-12 p-0 lg:absolute top-[0%] right-[2%]">
           <button
           onClick={()=> toast.success('Congrats! you got special Ticket')}
             className="flex select-none gap-2 rounded-lg py-3 px-6 text-center align-middle font-bold text-xl uppercase bg-none text-white transition ease-linear duration-200 border border-blue-500 hover:border-clr-red hover:text-clr-red active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none "

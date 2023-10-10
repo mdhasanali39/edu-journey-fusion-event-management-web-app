@@ -36,7 +36,7 @@ const Banner = () => {
               <p
                 data-aos="zoom-in-up"
                 data-aos-duration="3000"
-                className="text-2xl text-clr-red"
+                className="text-2xl"
               >
                 Speacial people are get Speacial gift
               </p>

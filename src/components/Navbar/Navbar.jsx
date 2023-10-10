@@ -20,7 +20,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`relative flex justify-between py-4 px-6 lg:px-12 ${!isMenuClicked && 'overflow-hidden'}`}>
+    <nav className={`relative flex justify-between py-4 px-6 lg:px-12 `}>
       {/* logo  */}
       <div className="font-bold text-2xl text-white">
         <Link to={"/"}>
@@ -32,8 +32,8 @@ const Navbar = () => {
         <li>
           <div className={`
           ${ 
-            isMenuClicked ? 'w-[98%] space-y-3 absolute z-50 top-[75%] left-[1%]  bg-custom-blue text-center px-5 py-8 border-2' 
-          : 'w-full space-y-3  absolute  top-[75%] translate-x-[140%]   bg-custom-blue text-center px-5 py-8  lg:space-y-0  lg:static  lg:translate-x-0  lg:bg-transparent lg:text-left lg:px-0 lg:py-0'}
+            isMenuClicked ? 'w-[98%] space-y-3 absolute z-30 top-[75%] left-[1%]  bg-custom-blue text-center px-5 py-8 border-2' 
+          : 'hidden'}
             transition ease-linear duration-300 lg:flex gap-6 items-center text-white`}>
             {/* home  */}
             <li className="font-semibold text-[17px]">
@@ -84,7 +84,7 @@ const Navbar = () => {
               <div
                 className={`absolute ${
                   isClicked ? "opacity-100" : "opacity-0 pointer-events-none"
-                } z-40 right-0 bg-white p-4 rounded-md transition ease-in-out duration-500`}
+                } z-50 right-0 bg-white p-7 whitespace-nowrap border rounded-md transition ease-in-out duration-500`}
               >
                 <h2 className="text-clr-red font-semibold">
                   {user?.displayName}
