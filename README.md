@@ -24,4 +24,6 @@ Let's know the different features and functionalities of my website.
   - and also can easy login with google 
   - when use login with Google they will be get an toast message like: sign in with google successful.
 
-## 5) 
+## 5) service details and special ticket page
+- when user click the service section get ticket button, user can see toast message like: your ticket purchase successful
+- and when user click the get now button in special ticket page, user can see the toast message like: you got special ticket
