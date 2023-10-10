@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const ServiceDetailsCard = ({ selectedService }) => {
   const { name, image, price, full_description } = selectedService;
@@ -54,5 +54,9 @@ const ServiceDetailsCard = ({ selectedService }) => {
     </div>
   );
 };
+
+ServiceDetailsCard.propTypes = {
+  selectedService: PropTypes.object.isRequired,
+}
 
 export default ServiceDetailsCard;
