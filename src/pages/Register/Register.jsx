@@ -20,7 +20,6 @@ const Register = () => {
     const password = form.get("password");
     const imgUrl = form.get('photo')
 
-    console.log(imgUrl);
     // if (!/^(?=.*?[A-Z])(?=.*?[#?!@$%^&*-]).{6,}$/.test(password)) {
     //   toast.error(
     //     "Password should at least 6 characters, one capital letter and one special character"
@@ -40,19 +39,19 @@ const Register = () => {
       toast.error("Password should at least one special character");
       return;
     }
-    console.log("pass");
+    
     // createUser
     createUser(email, password)
       .then(() => {
         profileUpdate(name, imgUrl)
           .then(() => {
             // console.log("profile updated");
+            window.location.reload(); // perfectly show user profile image
           })
           .catch((err) => {
             console.error(err);
           });
         toast.success("Your Account created Successful");
-        // console.log(result.user);
       })
       .catch((err) => {
         toast.error(err.message.split("/")[1].slice(0, -2));
