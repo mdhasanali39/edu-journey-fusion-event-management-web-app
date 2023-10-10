@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { FaArrowRightLong } from "react-icons/fa6";
+import PropTypes from 'prop-types';
 
 Aos.init();
 
 const ServicesCard = ({ service }) => {
-  const { name, image, price, short_description } = service;
+  const { name, image, price, short_description } = service || {}
 
 
   return (
@@ -36,5 +37,9 @@ const ServicesCard = ({ service }) => {
     </div>
   );
 };
+
+ServicesCard.propTypes = {
+  service: PropTypes.object.isRequired,
+}
 
 export default ServicesCard;
